@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="es" class="h-100" data-bs-theme="auto">
+  <head><script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/color-modes.js') }}"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>La Heladería</title>
+  
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/bootstrap.min.css')}}" type="text/css">    
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename='styles/cover.css')}}" rel="stylesheet" type="text/css">
+
+  </head>
+  <body class="d-flex h-100 text-center bg-info-subtle">
+    
+
+    <!-- Barra de navegación -->
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="mb-auto">
+      <div>
+        <h3 class="float-md-start mb-0">La Heladería</h3>
+        <nav class="nav nav-masthead justify-content-center float-md-end">
+            <a class="nav-link fw-bold py-1 px-0" href="{{ url_for('raiz')}}">Registrar Pedido</a>
+
+        </nav>
+      </div>
+    </header>
+
+  
+
+    <!-- Contenido central -->
+  <main class="px-3">
+    <!--
+    <img class=logo src="{{url_for('static', filename='img/fiscalia_logo.png')}}" alt="logo de la fiscalia">
+    -->
+    <h1>Registro de pedido</h1>
+
+    <form action="/detalle-compra" method="POST">
+
+        <div class="mb-3">
+
+            <div class="input-group">
+                <span class="input-group-text" id="basic-addon3">Cono 1 Bola</span>
+                <input type="text" class="form-control" id="basic-url" placeholder="Cantidad..." aria-describedby="basic-addon3 basic-addon4" name="bola1">                 
+            </div>
+
+            <div class="input-group">
+                <span class="input-group-text" id="basic-addon3">Cono 2 Bolas</span>
+                <input type="text" class="form-control" id="basic-url" placeholder="Cantidad..." aria-describedby="basic-addon3 basic-addon4" name="bolas2">                 
+            </div>
+
+            <div class="input-group">
+                <span class="input-group-text" id="basic-addon3">Canasta 2 Bolas</span>
+                <input type="text" class="form-control" id="basic-url" placeholder="Cantidad..." aria-describedby="basic-addon3 basic-addon4" name="bolas2c">                 
+            </div>
+
+            <div class="input-group">
+                <span class="input-group-text" id="basic-addon3">3 Bolas</span>
+                <input type="text" class="form-control" id="basic-url" placeholder="Cantidad..." aria-describedby="basic-addon3 basic-addon4" name="bolas3">                 
+            </div>
+
+            <div class="input-group">
+                <span class="input-group-text" id="basic-addon3">4 Bolas</span>
+                <input type="text" class="form-control" id="basic-url" placeholder="Cantidad..." aria-describedby="basic-addon3 basic-addon4" name="bolas4">                 
+            </div>
+
+            <div class="input-group">
+                <span class="input-group-text" id="basic-addon3">Ensalada 3000</span>
+                <input type="text" class="form-control" id="basic-url" placeholder="Cantidad..." aria-describedby="basic-addon3 basic-addon4" name="ensalada1">                 
+            </div>
+
+            <div class="input-group">
+                <span class="input-group-text" id="basic-addon3">Ensalada 7000</span>
+                <input type="text" class="form-control" id="basic-url" placeholder="Cantidad..." aria-describedby="basic-addon3 basic-addon4" name="ensalada2">                 
+            </div>
+
+            <div class="input-group">
+                <span class="input-group-text" id="basic-addon3">Ensalada 8500</span>
+                <input type="text" class="form-control" id="basic-url" placeholder="Cantidad..." aria-describedby="basic-addon3 basic-addon4" name="ensalada3">                 
+            </div>
+
+            
+            <div class="input-group">
+                <span class="input-group-text" id="basic-addon3">Ensalada 10000</span>
+                <input type="text" class="form-control" id="basic-url" placeholder="Cantidad..." aria-describedby="basic-addon3 basic-addon4" name="ensalada4">                 
+            </div>
+
+            <div class="input-group">
+                <span class="input-group-text" id="basic-addon3">Ensalada 11000 para llevar</span>
+                <input type="text" class="form-control" id="basic-url" placeholder="Cantidad..." aria-describedby="basic-addon3 basic-addon4" name="ensalada5">                 
+            </div>
+            
+            <div class="input-group">
+                <span class="input-group-text" id="basic-addon3">Obleas</span>
+                <input type="text" class="form-control" id="basic-url" placeholder="Cantidad..." aria-describedby="basic-addon3 basic-addon4" name="oblea">                 
+            </div>   
+            
+            <div class="input-group">
+                <span class="input-group-text" id="basic-addon3">Brownie</span>
+                <input type="text" class="form-control" id="basic-url" placeholder="Cantidad..." aria-describedby="basic-addon3 basic-addon4" name="brownie">                 
+            </div>
+
+            <div class="input-group">
+                <span class="input-group-text" id="basic-addon3">Banana Split</span>
+                <input type="text" class="form-control" id="basic-url" placeholder="Cantidad..." aria-describedby="basic-addon3 basic-addon4" name="bnnsplit">                 
+            </div> 
+
+            <div class="input-group">
+                <span class="input-group-text" id="basic-addon3">Mini Banana</span>
+                <input type="text" class="form-control" id="basic-url" placeholder="Cantidad..." aria-describedby="basic-addon3 basic-addon4" name="minibnn">                 
+            </div> 
+
+            <div class="input-group">
+                <span class="input-group-text" id="basic-addon3">Fresas con crema</span>
+                <input type="text" class="form-control" id="basic-url" placeholder="Cantidad..." aria-describedby="basic-addon3 basic-addon4" name="fresas">                 
+            </div> 
+
+            <div class="input-group">
+                <span class="input-group-text" id="basic-addon3">Jugo en leche</span>
+                <input type="text" class="form-control" id="basic-url" placeholder="Cantidad..." aria-describedby="basic-addon3 basic-addon4" name="jleche">                 
+            </div> 
+
+            <div class="input-group">
+                <span class="input-group-text" id="basic-addon3">Jugo en agua</span>
+                <input type="text" class="form-control" id="basic-url" placeholder="Cantidad..." aria-describedby="basic-addon3 basic-addon4" name="jagua">                 
+            </div> 
+
+            <div class="input-group">
+                <span class="input-group-text" id="basic-addon3">Malteada</span>
+                <input type="text" class="form-control" id="basic-url" placeholder="Cantidad..." aria-describedby="basic-addon3 basic-addon4" name="malteada">                 
+            </div> 
+
+            <div class="input-group">
+                <span class="input-group-text" id="basic-addon3">Medio Litro</span>
+                <input type="text" class="form-control" id="basic-url" placeholder="Cantidad..." aria-describedby="basic-addon3 basic-addon4" name="mlitro">                 
+            </div> 
+
+            <div class="input-group">
+                <span class="input-group-text" id="basic-addon3">Adición bola helado</span>
+                <input type="text" class="form-control" id="basic-url" placeholder="Cantidad..." aria-describedby="basic-addon3 basic-addon4" name="adbola">                 
+            </div>
+
+        <button type="submit" class="btn btn-success" type="submit">Registrar pedido</button>
+
+        </div>
+    </form>
+
+        <p class="lead">{{message}}</p>  
+
+  </main>
+
+      <!-- Pie de pagina -->
+  <footer class="mt-auto text-white-50">
+    <p><a class="text-white">Hecho por bvring</a> - 2024</p>
+  </footer>
+</div>
+
+    </body>
+</html>

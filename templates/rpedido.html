@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es" class="h-100" data-bs-theme="auto">
+  <head><script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/color-modes.js') }}"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>La Heladería</title>
+  
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/bootstrap.min.css')}}" type="text/css">    
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename='styles/cover.css')}}" rel="stylesheet" type="text/css">
+
+  </head>
+  <body class="d-flex h-100 text-center bg-info-subtle">
+    
+
+    <!-- Barra de navegación -->
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="mb-auto">
+      <div>
+        <h3 class="float-md-start mb-0">La Heladería</h3>
+        <nav class="nav nav-masthead justify-content-center float-md-end">
+            <a class="nav-link fw-bold py-1 px-0" href="{{ url_for('raiz')}}">Registrar Pedido</a>
+        </nav>
+      </div>
+    </header>
+
+  
+
+    <!-- Contenido central -->
+  <main class="px-3">
+    <!--
+    <img class=logo src="{{url_for('static', filename='img/fiscalia_logo.png')}}" alt="logo de la fiscalia">
+    -->
+    <h1>Detalle de la compra</h1>
+        {{table | safe}}
+    <p class="lead">{{message}}</p>  
+
+  </main>
+
+      <!-- Pie de pagina -->
+  <footer class="mt-auto text-white-50">
+    <p><a class="text-white">Hecho por bvring</a> - 2024</p>
+  </footer>
+</div>
+
+    </body>
+</html> 
